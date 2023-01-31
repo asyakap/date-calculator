@@ -1,6 +1,6 @@
 # Title
 
-##### By _Molly Donegan_
+##### By _Asia Kaplanyan_
 
 #### _Description_
 
@@ -35,4 +35,4 @@ _A web application that..._
 
 * _MIT_
 
-Copyright (c) _2023_ _Molly Donegan_
+Copyright (c) _2023_ _Asia Kaplanyan_
