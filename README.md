@@ -1,21 +1,20 @@
-# Title
+# Weekday Calculator
 
 ##### By _Asia Kaplanyan_
 
 #### _Description_
 
-_A web application that..._
+_A web application that calculates which weekday is an input date._
 
 ## Technologies Used
 
 * JavaScript
 * HTML / CSS
-* Boostrap
 * Webpack
 
 ## Github Pages Site
 
-[Title](https://mdonegan91.github.io/title/)
+[Title](https://asyakap.github.io/date-calculator/)
 
 ## Setup/Installation Requirements
 
