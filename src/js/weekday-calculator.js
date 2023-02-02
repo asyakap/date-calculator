@@ -24,8 +24,16 @@ export default class Calculator {
   WhichDay(date, today) {
     date = new Date(date);
     today = new Date(today);
-    let diff = this.CountDiff(date,today);
-  
+    let dayOfWeek = "";
+    let diff = this.CountDiff(date, today);
+    let daysOfWeek = ["thursday", "wednesday", "tuesday", "monday", "sunday", "saturday", "friday"];
+    if (diff > -1) {
+      dayOfWeek = daysOfWeek[diff % 7];
+    }
+    else {
+      dayOfWeek = daysOfWeek[7 - (Math.abs(diff) % 7)];
+    }
+    return dayOfWeek;
   }
 
 }

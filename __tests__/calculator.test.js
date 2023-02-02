@@ -4,13 +4,13 @@ describe('Calculator', () => {
   let calculator;
 
   beforeEach(() => {
-    let date = "01/31/2023";
+    let date = "09/09/1985";
     let today = "02/02/2023";
     calculator = new Calculator(date);
   });
 
   test('it should correctly create an object with a date and a weekday', () => {
-    expect(calculator.date).toBe("01/31/2023");
+    expect(calculator.date).toBe("09/09/1985");
     expect(calculator.weekday).toBe("");
   });
 
@@ -25,11 +25,11 @@ describe('Calculator', () => {
   });
 
   test('it should correctly count difference in days between two dates', () => {
-    expect(calculator.CountDiff(calculator.date, calculator.today)).toBe(2);
+    expect(calculator.CountDiff(calculator.date, calculator.today)).toBe(13660);
   });
 
   test('it should correctly determine which weekday is the input date is', () => {
-    expect(calculator.WhichDay(calculator.date, calculator.today)).toBe("tuesday");
+    expect(calculator.WhichDay(calculator.date, calculator.today)).toBe("monday");
   });
 
 
