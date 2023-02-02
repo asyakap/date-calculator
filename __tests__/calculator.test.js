@@ -4,12 +4,12 @@ describe('Calculator', () => {
   let calculator;
 
   beforeEach(() => {
-    let date = "01/01/2015";
+    let date = "01/31/2023";
     calculator = new Calculator(date);
   });
 
   test('it should correctly create an object with a date and a weekday', () => {
-    expect(calculator.date).toBe("01/01/2015");
+    expect(calculator.date).toBe("01/31/2023");
     expect(calculator.weekday).toBe("");
   });
 
@@ -21,6 +21,12 @@ describe('Calculator', () => {
     date = "abc";
     calculator = new Calculator(date);
     expect(calculator.ValidDate(calculator.date)).toBe(false);
+  });
+
+  test('it should correctly count difference in days between two dates', () => {
+    let today = "02/02/2023";
+    calculator = new Calculator(calculator.date);
+    expect(calculator.CountDiff(calculator.date, calculator.today)).toBe(3);
   });
 
 
