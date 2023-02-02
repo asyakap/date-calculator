@@ -5,6 +5,7 @@ describe('Calculator', () => {
 
   beforeEach(() => {
     let date = "01/31/2023";
+    let today = "02/02/2023";
     calculator = new Calculator(date);
   });
 
@@ -24,9 +25,11 @@ describe('Calculator', () => {
   });
 
   test('it should correctly count difference in days between two dates', () => {
-    let today = "02/02/2023";
-    calculator = new Calculator(calculator.date);
     expect(calculator.CountDiff(calculator.date, calculator.today)).toBe(2);
+  });
+
+  test('it should correctly determine which weekday is the input date is', () => {
+    expect(calculator.WhichDay(calculator.date, calculator.today)).toBe("tuesday");
   });
 
 

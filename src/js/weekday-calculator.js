@@ -19,8 +19,13 @@ export default class Calculator {
     const utc1 = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
     const utc2 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
     return Math.floor((utc2 - utc1) / _MS_PER_DAY);
-  
-}
 
+  }
+  WhichDay(date, today) {
+    date = new Date(date);
+    today = new Date(today);
+    let diff = this.CountDiff(date,today);
+  
+  }
 
 }
