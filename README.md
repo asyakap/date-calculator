@@ -14,7 +14,7 @@ _A web application that calculates which weekday is an input date._
 
 ## Github Pages Site
 
-[Title](https://asyakap.github.io/date-calculator/)
+[Date Calculator](https://asyakap.github.io/date-calculator/)
 
 ## Setup/Installation Requirements
 
