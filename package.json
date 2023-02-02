@@ -6,8 +6,11 @@
         "build": "webpack --mode=development",
         "start": "npm run build && webpack-dev-server --open --mode=development",
         "lint": "eslint src/*.js",
-        "test": "jest --coverage"
-    },
+        "test": "jest --coverage",
+        "gh-deploy": "git push ak :gh-pages && git subtree push --prefix dist ak gh-pages",
+        "gh-deploy-init": "git push ak && git subtree push --prefix dist ak gh-pages"
+      },
+
     "keywords": [],
     "author": "",
     "license": "ISC",
