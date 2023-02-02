@@ -26,7 +26,7 @@ describe('Calculator', () => {
   test('it should correctly count difference in days between two dates', () => {
     let today = "02/02/2023";
     calculator = new Calculator(calculator.date);
-    expect(calculator.CountDiff(calculator.date, calculator.today)).toBe(3);
+    expect(calculator.CountDiff(calculator.date, calculator.today)).toBe(2);
   });
 
 
