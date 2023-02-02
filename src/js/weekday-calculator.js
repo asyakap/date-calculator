@@ -6,15 +6,13 @@ export default class Calculator {
   }
 
   ValidDate(date) {
-    if (Object.prototype.toString.call(date) === "[object Date]") {
-      return true;
-    } else {
-      return false;
-    }
+    date = new Date(date);
+    return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
   }
 
 
-
+  
 }
+
 
 

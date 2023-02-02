@@ -5,9 +5,7 @@ describe('Calculator', () => {
 
   beforeEach(() => {
     let date = "01/01/2015";
-    let notDate = "15/16/2015"
     calculator = new Calculator(date);
-    console.log(calculator.date);
   });
 
   test('it should correctly create an object with a date and a weekday', () => {
@@ -16,8 +14,13 @@ describe('Calculator', () => {
   });
 
   test('it should correctly recognize if an input is a date or not', () => {
-    expect(calculator.ValidDate("date")).toBe(true);
-    expect(calculator.ValidDate("notDate")).toBe(false);
+    expect(calculator.ValidDate(calculator.date)).toBe(true);
+    let date = "15/16/2015";
+    calculator = new Calculator(date);
+    expect(calculator.ValidDate(calculator.date)).toBe(false);
+    date = "abc";
+    calculator = new Calculator(date);
+    expect(calculator.ValidDate(calculator.date)).toBe(false);
   });
 
 
